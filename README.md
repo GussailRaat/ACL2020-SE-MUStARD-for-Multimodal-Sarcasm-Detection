@@ -4,7 +4,7 @@ Code for the paper [Sentiment and Emotion help Sarcasm? A Multi-task Learning Fr
 ### Dataset
 * We manually annotate the recently released multi-modal MUStARD sarcasm dataset with sentiment and emotion classes, both implicit and explicit. 
 * You can download datasets from [here](https://drive.google.com/drive/folders/1dJZyCSm80UZFHwbBRRg89njTDOwPkWa8?usp=sharing).
-* Download the dataset from given link and set the path in the code accordingly make two folder (i) results and (ii) weights.
+* Download the dataset from given link and set the path in the code accordingly make two folders (i) results and (ii) weights.
 
 ### Model Description
 * For multi-tasking, we propose two attention mechanisms, viz. Inter-segment Inter-modal Attention and Intra-segment Inter-modal Attention. 
