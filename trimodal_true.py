@@ -355,56 +355,6 @@ def multiTask_multimodal(mode, filePath, drops=[0.7, 0.5, 0.5], r_units=300, td_
                                                                                                         'prfs_weighted: '+ str(performance[1]) + '\n'*2)
 
 
-        # ============================== i-sentiment =========================================
-        performance = sarcasm_classification_performance(prediction[1], test_sentiment_uText_implicit)
-
-        tempAcc_is.append(performance[0])
-        tempP_is.append(performance[1][0])
-        tempR_is.append(performance[1][1])
-        tempF_is.append(performance[1][2])
-
-        open('results/sarcasm_speaker_dependent_wse_new_text_setup_3_'+exMode+'_without_context_and_speaker.txt', 'a').write('=============== i-sentiment ===============\n' +
-                                                                                                        'loadAcc: '+ str(performance[0]) + '\n' +
-                                                                                                        'prfs_weighted: '+ str(performance[1]) + '\n'*2)
-
-        # ============================== e-sentiment =========================================
-        performance = sarcasm_classification_performance(prediction[2], test_sentiment_uText_explicit)
-
-        tempAcc_es.append(performance[0])
-        tempP_es.append(performance[1][0])
-        tempR_es.append(performance[1][1])
-        tempF_es.append(performance[1][2])
-
-        open('results/sarcasm_speaker_dependent_wse_new_text_setup_3_'+exMode+'_without_context_and_speaker.txt', 'a').write('=============== e-sentiment ===============\n' +
-                                                                                                        'loadAcc: '+ str(performance[0]) + '\n' +
-                                                                                                        'prfs_weighted: '+ str(performance[1]) + '\n'*2)
-
-        # ============================== i-emotion =========================================
-        performance = sarcasm_classification_performance(prediction[3], test_emotion_uText_implicit)
-
-        tempAcc_ie.append(performance[0])
-        tempP_ie.append(performance[1][0])
-        tempR_ie.append(performance[1][1])
-        tempF_ie.append(performance[1][2])
-
-        open('results/sarcasm_speaker_dependent_wse_new_text_setup_3_'+exMode+'_without_context_and_speaker.txt', 'a').write('=============== i-emotion ===============\n' +
-                                                                                                        'loadAcc: '+ str(performance[0]) + '\n' +
-                                                                                                        'prfs_weighted: '+ str(performance[1]) + '\n'*2)
-
-
-        # ============================== e-emotion =========================================
-        performance = sarcasm_classification_performance(prediction[4], test_emotion_uText_explicit)
-
-        tempAcc_ee.append(performance[0])
-        tempP_ee.append(performance[1][0])
-        tempR_ee.append(performance[1][1])
-        tempF_ee.append(performance[1][2])
-
-        open('results/sarcasm_speaker_dependent_wse_new_text_setup_3_'+exMode+'_without_context_and_speaker.txt', 'a').write('=============== e-emotion ===============\n' +
-                                                                                                        'loadAcc: '+ str(performance[0]) + '\n' +
-                                                                                                        'prfs_weighted: '+ str(performance[1]) + '\n'*2)
-
-
 
         ################### release gpu memory ###################
         K.clear_session()
@@ -427,22 +377,6 @@ for drop in [0.3]:
                     globalP   = []
                     globalR   = []
                     globalF   = []
-                    globalAcc_is = []
-                    globalP_is = []
-                    globalR_is = []
-                    globalF_is = []
-                    globalAcc_es = []
-                    globalP_es = []
-                    globalR_es = []
-                    globalF_es = []
-                    globalAcc_ie = []
-                    globalP_ie = []
-                    globalR_ie = []
-                    globalF_ie = []
-                    globalAcc_ee = []
-                    globalP_ee = []
-                    globalR_ee = []
-                    globalF_ee = []
                     for foldNum in foldNums:
                         featuresExtraction_original(foldNum, exMode)
                         featuresExtraction_fastext(foldNum, exMode)
@@ -484,27 +418,4 @@ for drop in [0.3]:
                                                                                                                     'globalP: '+ str(np.mean(globalP,axis=0)) + '\n' +
                                                                                                                     'globalR: '+ str(np.mean(globalR,axis=0)) + '\n' +
                                                                                                                     'globalF: '+ str(np.mean(globalF,axis=0)) + '\n'*2)
-
-                    open('results/sarcasm_speaker_dependent_wse_new_text_setup_3_'+exMode+'_without_context_and_speaker_average.txt', 'a').write(filePath +'\n'+
-                                                                                                                    'globalAcc_is: '+ str(np.mean(globalAcc_is,axis=0)) + '\n' +
-                                                                                                                    'globalP_is: '+ str(np.mean(globalP_is,axis=0)) + '\n' +
-                                                                                                                    'globalR_is: '+ str(np.mean(globalR_is,axis=0)) + '\n' +
-                                                                                                                    'globalF_is: '+ str(np.mean(globalF_is,axis=0)) + '\n'*2)
-
-                    open('results/sarcasm_speaker_dependent_wse_new_text_setup_3_'+exMode+'_without_context_and_speaker_average.txt', 'a').write(filePath +'\n'+
-                                                                                                                    'globalAcc_es: '+ str(np.mean(globalAcc_es,axis=0)) + '\n' +
-                                                                                                                    'globalP_es: '+ str(np.mean(globalP_es,axis=0)) + '\n' +
-                                                                                                                    'globalR_es: '+ str(np.mean(globalR_es,axis=0)) + '\n' +
-                                                                                                                    'globalF_es: '+ str(np.mean(globalF_es,axis=0)) + '\n'*2)
-
-                    open('results/sarcasm_speaker_dependent_wse_new_text_setup_3_'+exMode+'_without_context_and_speaker_average.txt', 'a').write(filePath +'\n'+
-                                                                                                                    'globalAcc_ie: '+ str(np.mean(globalAcc_ie,axis=0)) + '\n' +
-                                                                                                                    'globalP_ie: '+ str(np.mean(globalP_ie,axis=0)) + '\n' +
-                                                                                                                    'globalR_ie: '+ str(np.mean(globalR_ie,axis=0)) + '\n' +
-                                                                                                                    'globalF_ie: '+ str(np.mean(globalF_ie,axis=0)) + '\n'*2)
-
-                    open('results/sarcasm_speaker_dependent_wse_new_text_setup_3_'+exMode+'_without_context_and_speaker_average.txt', 'a').write(filePath +'\n'+
-                                                                                                                    'globalAcc_ee: '+ str(np.mean(globalAcc_ee,axis=0)) + '\n' +
-                                                                                                                    'globalP_ee: '+ str(np.mean(globalP_ee,axis=0)) + '\n' +
-                                                                                                                    'globalR_ee: '+ str(np.mean(globalR_ee,axis=0)) + '\n' +
-                                                                                                                    'globalF_ee: '+ str(np.mean(globalF_ee,axis=0)) + '\n' + '#'*100 + '\n'*2)
+                    
