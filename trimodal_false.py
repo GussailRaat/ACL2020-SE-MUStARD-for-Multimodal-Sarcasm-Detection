@@ -213,7 +213,7 @@ def multiTask_multimodal(mode, filePath, drops=[0.7, 0.5, 0.5], r_units=300, td_
     tempR   =[]
     tempF   =[]
 
-    runs = 3
+    runs = 1
     best_accuracy = 0
     drop0  = drops[0]
     drop1  = drops[1]
