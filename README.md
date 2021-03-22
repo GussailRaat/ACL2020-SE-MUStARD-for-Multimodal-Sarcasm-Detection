@@ -12,22 +12,26 @@ We manually annotate this multi-modal **MUStARD** sarcasm dataset with *sentimen
 
 ### Feature Extraction
 
-Download the extracted features from [here]
+There are two setups which are as follows;
 
-There will be
+#### Speaker Dependent Setup (exMode=True)
 
-#### Speaker Dependent Setup
+* [datasetTrue_fasttext.zip](https://drive.google.com/file/d/1VYpcu4pkg30GUIjJ9P1L4gk9MnaKNm3b/view?usp=sharing): This file contains only text features (using fasttext 300d).
 
-* [datasetFalse_fasttext.zip](https://drive.google.com/file/d/1VYpcu4pkg30GUIjJ9P1L4gk9MnaKNm3b/view?usp=sharing) = This file contains only text features (using fasttext 300d).
+<t> fdh<\t>
 
-* [datasetTrue_original.zip](https://drive.google.com/file/d/1KsP__c28hQyBSanKDYNL-XwBfe18KJPX/view?usp=sharing)  = This file contains acoustic and visual features ().
+* [datasetTrue_original.zip](https://drive.google.com/file/d/1KsP__c28hQyBSanKDYNL-XwBfe18KJPX/view?usp=sharing): This file contains acoustic and visual features (from [here](https://github.com/soujanyaporia/MUStARD)).
 
-#### Speaker Independent Setup
+#### Speaker Independent Setup (exMode=False)
 
-* [datasetTrue_fasttext.zip](https://drive.google.com/file/d/1ZaQqqTyYDxf0KB5tDcFytuk18bfTtWzp/view?usp=sharing)  = This file contains only text features (using fasttext 300d).
+* [datasetFalse_fasttext.zip](https://drive.google.com/file/d/1o9WvwSvpKbz_jbZuajGtlEQOrzUhIgR-/view?usp=sharing): This file contains only text features (using fasttext 300d).
 
-* [datasetFalse_original.zip](https://drive.google.com/file/d/1s0KySNDNS5LXWquGM0-FF4kra0TEQ7GW/view?usp=sharing) = This file contains acoustic and visual features ().
+* [datasetFalse_original.zip](https://drive.google.com/file/d/1LyTp-3NsSPLbFt72ojpL0j2Reu0NA8VF/view?usp=sharing): This file contains acoustic and visual features (from [here](https://github.com/soujanyaporia/MUStARD)).
      
+     
+     featuresExtraction_fastext(foldNum, exMode)
+     foldNum = 0, 1, 2, 3, 4
+     exMode  = True
 
 ### Data Format
 
