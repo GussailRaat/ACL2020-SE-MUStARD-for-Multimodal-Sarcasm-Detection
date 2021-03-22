@@ -11,10 +11,10 @@ We manually annotate this multi-modal **MUStARD** sarcasm dataset with *sentimen
 
 ### Data Format
 
-| Key  | Value |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+    | Key  | Value |
+    | ------------- | ------------- |
+    | Content Cell  | Content Cell  |
+    | Content Cell  | Content Cell  |
 
 
 ### Run the code
