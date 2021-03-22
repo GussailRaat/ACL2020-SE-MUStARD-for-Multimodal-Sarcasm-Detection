@@ -18,8 +18,8 @@ We manually annotate this multi-modal **MUStARD** sarcasm dataset with *sentimen
 | context  | List of utterances (in chronological order) preceding the target utterance. |
 | context_speakers  | Respective speakers of the context utterances. |
 | sarcasm  | Binary label for sarcasm tag.  |
-| implicit-sentiment  | three labels for implcit sentiment tag.  |
-| explicit-sentiment  | three labels for explcit sentiment tag.  |
+| implicit-sentiment  | Three labels for implcit sentiment tag.  |
+| explicit-sentiment  | Three labels for explcit sentiment tag.  |
 | implicit-emotion  | Nine labels for implicit-emotion tag.  |
 | explicit-emotion  | Nine labels for explicit-emotion tag.  |
 
