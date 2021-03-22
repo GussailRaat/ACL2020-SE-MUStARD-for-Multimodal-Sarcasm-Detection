@@ -25,7 +25,7 @@ There are two setups which are as follows;
 
 **Note**: see function *featuresExtraction_original(foldNum, exMode)* in *trimodal_true.py*, where foldNum belongs to [0-4] and exMode  = True
 
-
+--------------------
 #### Speaker Independent Setup (exMode=False)
 
 * [datasetFalse_fasttext.zip](https://drive.google.com/file/d/1o9WvwSvpKbz_jbZuajGtlEQOrzUhIgR-/view?usp=sharing): This file contains only text features (using fasttext 300d).
