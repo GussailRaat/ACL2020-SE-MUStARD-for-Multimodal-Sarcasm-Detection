@@ -14,7 +14,7 @@ We manually annotate this multi-modal **MUStARD** sarcasm dataset with *sentimen
 * The main motivation of Inter-segment Inter-modal Attention is to learn the relationship between the different segments of the sentence across the modalities. 
 * In contrast, Intra-segment Inter-modal Attention focuses within the same segment of the sentence across the modalities.
 
--------------------
+---
 @inproceedings{mustard,
     title = "Towards Multimodal Sarcasm Detection (An  \_Obviously\_ Perfect Paper)",
     author = "Castro, Santiago  and
@@ -29,5 +29,5 @@ We manually annotate this multi-modal **MUStARD** sarcasm dataset with *sentimen
     address = "Florence, Italy",
     publisher = "Association for Computational Linguistics",
 }
--------------------
+---
 
