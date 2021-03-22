@@ -62,21 +62,6 @@ There are two setups which are as follows;
 ### Citation
 Please cite the following paper if you find this dataset useful in your research:
 
-    @inproceedings{mustard,
-        title = "Towards Multimodal Sarcasm Detection (An Obviously Perfect Paper)",
-        author = "Castro, Santiago  and
-          Hazarika, Devamanyu  and
-          P{\'e}rez-Rosas, Ver{\'o}nica  and
-          Zimmermann, Roger  and
-          Mihalcea, Rada  and
-          Poria, Soujanya",
-        booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
-        month = "7",
-        year = "2019",
-        address = "Florence, Italy",
-        publisher = "Association for Computational Linguistics",
-    }
-    
     
     @inproceedings{chauhan-etal-2020-sentiment,
         title = "Sentiment and Emotion help Sarcasm? A Multi-task Learning Framework for Multi-Modal Sarcasm, Sentiment and Emotion Analysis",
