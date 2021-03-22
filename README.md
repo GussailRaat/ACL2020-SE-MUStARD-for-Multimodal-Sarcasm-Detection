@@ -9,35 +9,6 @@ The original **MUStARD** dataset released in [Towards Multimodal Sarcasm Detecti
 ### Extended MUStARD Dataset with Sentiment and Emotion Classes
 We manually annotate this multi-modal **MUStARD** sarcasm dataset with *sentiment* and *emotion* classes, both implicit and explicit. You can download extended MUStARD datasets from [here](https://drive.google.com/drive/folders/1dJZyCSm80UZFHwbBRRg89njTDOwPkWa8?usp=sharing). 
 
-
-### Feature Extraction
-
-There are two setups which are as follows;
-
-#### Speaker Dependent Setup (exMode=True)
-
-* [datasetTrue_fasttext.zip](https://drive.google.com/file/d/1VYpcu4pkg30GUIjJ9P1L4gk9MnaKNm3b/view?usp=sharing): This file contains only text features (using fasttext 300d).
-
-**Note**: see function *featuresExtraction_fastext(foldNum, exMode)* in *trimodal_true.py*, where foldNum belongs to [0-4] and exMode  = True
-
-
-* [datasetTrue_original.zip](https://drive.google.com/file/d/1KsP__c28hQyBSanKDYNL-XwBfe18KJPX/view?usp=sharing): This file contains acoustic and visual features (from [here](https://github.com/soujanyaporia/MUStARD)).
-
-**Note**: see function *featuresExtraction_original(foldNum, exMode)* in *trimodal_true.py*, where foldNum belongs to [0-4] and exMode  = True
-
---------------------
-#### Speaker Independent Setup (exMode=False)
-
-* [datasetFalse_fasttext.zip](https://drive.google.com/file/d/1o9WvwSvpKbz_jbZuajGtlEQOrzUhIgR-/view?usp=sharing): This file contains only text features (using fasttext 300d).
-
-**Note**: see function *featuresExtraction_fastext(foldNum, exMode)* in *trimodal_false.py*, where foldNum = 3 and exMode  = False
-
-
-* [datasetFalse_original.zip](https://drive.google.com/file/d/1LyTp-3NsSPLbFt72ojpL0j2Reu0NA8VF/view?usp=sharing): This file contains acoustic and visual features (from [here](https://github.com/soujanyaporia/MUStARD)).
-     
-**Note**: see function *featuresExtraction_original(foldNum, exMode)* in *trimodal_false.py*, where foldNum = 3 and exMode  = False
-     
-
 ### Data Format
 
 | Key  | Value |
@@ -51,6 +22,38 @@ There are two setups which are as follows;
 | explicit-sentiment  | Three labels for explcit sentiment tag.  |
 | implicit-emotion  | Nine labels for implicit-emotion tag.  |
 | explicit-emotion  | Nine labels for explicit-emotion tag.  |
+
+
+### Feature Extraction
+
+There are two setups which are as follows;
+
+#### (1) Speaker Dependent Setup (exMode=True)
+
+* [datasetTrue_fasttext.zip](https://drive.google.com/file/d/1VYpcu4pkg30GUIjJ9P1L4gk9MnaKNm3b/view?usp=sharing): This file contains only text features (using fasttext 300d).
+
+**Note**: see function *featuresExtraction_fastext(foldNum, exMode)* in *trimodal_true.py*, where foldNum belongs to [0-4] and exMode  = True
+
+
+* [datasetTrue_original.zip](https://drive.google.com/file/d/1KsP__c28hQyBSanKDYNL-XwBfe18KJPX/view?usp=sharing): This file contains acoustic and visual features (from [here](https://github.com/soujanyaporia/MUStARD)).
+
+**Note**: see function *featuresExtraction_original(foldNum, exMode)* in *trimodal_true.py*, where foldNum belongs to [0-4] and exMode  = True
+
+--------------------
+#### (2) Speaker Independent Setup (exMode=False)
+
+* [datasetFalse_fasttext.zip](https://drive.google.com/file/d/1o9WvwSvpKbz_jbZuajGtlEQOrzUhIgR-/view?usp=sharing): This file contains only text features (using fasttext 300d).
+
+**Note**: see function *featuresExtraction_fastext(foldNum, exMode)* in *trimodal_false.py*, where foldNum = 3 and exMode  = False
+
+
+* [datasetFalse_original.zip](https://drive.google.com/file/d/1LyTp-3NsSPLbFt72ojpL0j2Reu0NA8VF/view?usp=sharing): This file contains acoustic and visual features (from [here](https://github.com/soujanyaporia/MUStARD)).
+     
+**Note**: see function *featuresExtraction_original(foldNum, exMode)* in *trimodal_false.py*, where foldNum = 3 and exMode  = False
+     
+
+Download all the features and put into the folder **feature_extraction** and then run the code.
+
 
 
 ### Run the code
