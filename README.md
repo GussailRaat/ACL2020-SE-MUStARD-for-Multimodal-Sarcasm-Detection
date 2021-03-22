@@ -18,15 +18,15 @@ There will be
 
 #### Speaker Dependent Setup
 
-     [datasetFalse_fasttext.zip](https://drive.google.com/file/d/1VYpcu4pkg30GUIjJ9P1L4gk9MnaKNm3b/view?usp=sharing) = This file contains only text features (using fasttext 300d).
+* [datasetFalse_fasttext.zip](https://drive.google.com/file/d/1VYpcu4pkg30GUIjJ9P1L4gk9MnaKNm3b/view?usp=sharing) = This file contains only text features (using fasttext 300d).
 
-     [datasetTrue_original.zip](https://drive.google.com/file/d/1KsP__c28hQyBSanKDYNL-XwBfe18KJPX/view?usp=sharing)  = This file contains acoustic and visual features ().
+* [datasetTrue_original.zip](https://drive.google.com/file/d/1KsP__c28hQyBSanKDYNL-XwBfe18KJPX/view?usp=sharing)  = This file contains acoustic and visual features ().
 
 #### Speaker Independent Setup
 
-[datasetTrue_fasttext.zip](https://drive.google.com/file/d/1ZaQqqTyYDxf0KB5tDcFytuk18bfTtWzp/view?usp=sharing)  = This file contains only text features (using fasttext 300d).
+* [datasetTrue_fasttext.zip](https://drive.google.com/file/d/1ZaQqqTyYDxf0KB5tDcFytuk18bfTtWzp/view?usp=sharing)  = This file contains only text features (using fasttext 300d).
 
-[datasetFalse_original.zip](https://drive.google.com/file/d/1s0KySNDNS5LXWquGM0-FF4kra0TEQ7GW/view?usp=sharing) = This file contains acoustic and visual features ().
+* [datasetFalse_original.zip](https://drive.google.com/file/d/1s0KySNDNS5LXWquGM0-FF4kra0TEQ7GW/view?usp=sharing) = This file contains acoustic and visual features ().
      
 
 ### Data Format
