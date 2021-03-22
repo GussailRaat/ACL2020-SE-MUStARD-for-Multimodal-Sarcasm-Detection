@@ -14,27 +14,20 @@ We manually annotate this multi-modal **MUStARD** sarcasm dataset with *sentimen
 * The main motivation of Inter-segment Inter-modal Attention is to learn the relationship between the different segments of the sentence across the modalities. 
 * In contrast, Intra-segment Inter-modal Attention focuses within the same segment of the sentence across the modalities.
 
+-------------------
+@inproceedings{mustard,
+    title = "Towards Multimodal Sarcasm Detection (An  \_Obviously\_ Perfect Paper)",
+    author = "Castro, Santiago  and
+      Hazarika, Devamanyu  and
+      P{\'e}rez-Rosas, Ver{\'o}nica  and
+      Zimmermann, Roger  and
+      Mihalcea, Rada  and
+      Poria, Soujanya",
+    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = "7",
+    year = "2019",
+    address = "Florence, Italy",
+    publisher = "Association for Computational Linguistics",
+}
+-------------------
 
-<!--  https://scholar.google.com/intl/en/scholar/inclusion.html#indexing -->
-<meta name="citation_title" content="Distill for R Markdown"/>
-<meta name="citation_fulltext_html_url" content="https://rstudio.github.io/distill"/>
-<meta name="citation_fulltext_world_readable" content=""/>
-<meta name="citation_online_date" content="2018/05/04"/>
-<meta name="citation_publication_date" content="2018/05/04"/>
-<meta name="citation_author" content="JJ Allaire"/>
-<meta name="citation_author_institution" content="RStudio"/>
-<meta name="citation_author" content="Rich Iannone"/>
-<meta name="citation_author_institution" content="RStudio"/>
-<meta name="citation_author" content="Yihui Xie"/>
-<meta name="citation_author_institution" content="RStudio"/>
-<meta name="citation_reference" content="citation_title=Distill;
-citation_publication_date=2016;citation_publisher=Distill Working
-Group;citation_doi=10.23915/distill;citation_author=Shan Carter;
-citation_author=Chirs Olah;citation_author=Arvind Satyanarayan"/>
-<meta name="citation_reference" content="citation_title=Literate
-programming;citation_publication_date=1984;
-citation_publisher=British Computer Society;citation_volume=27;
-citation_author=Donald E. Knuth"/>
-<meta name="citation_reference" content="citation_title=Dynamic
-documents with r and knitr;citation_publication_date=2015;
-citation_publisher=Chapman; Hall/CRC;citation_author=Yihui Xie"/>
