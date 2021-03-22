@@ -55,7 +55,9 @@ There are two setups which are as follows;
 
 ### Run the code
     
-    python2 trimodal.py
+    python2 trimodal_true.py (for speaker dependent)
+    
+    python2 trimodal_false.py  (for speaker independent)
 
 ### Citation
 Please cite the following paper if you find this dataset useful in your research:
