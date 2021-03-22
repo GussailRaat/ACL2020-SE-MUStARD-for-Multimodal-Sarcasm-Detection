@@ -1,1 +1,1 @@
-Output folder
+It will collect all the outputs.
