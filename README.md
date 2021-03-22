@@ -18,7 +18,7 @@ There are two setups which are as follows;
 
 * [datasetTrue_fasttext.zip](https://drive.google.com/file/d/1VYpcu4pkg30GUIjJ9P1L4gk9MnaKNm3b/view?usp=sharing): This file contains only text features (using fasttext 300d).
 
-**Note: see the funtion featuresExtraction_fastext(foldNum, exMode) in trimodal_true.py, where foldNum belongs to [0-4] and exMode  = True
+**Note: see the funtion featuresExtraction_fastext(foldNum, exMode) in trimodal_true.py, where foldNum belongs to [0-4] and exMode  = True**
 
 
 * [datasetTrue_original.zip](https://drive.google.com/file/d/1KsP__c28hQyBSanKDYNL-XwBfe18KJPX/view?usp=sharing): This file contains acoustic and visual features (from [here](https://github.com/soujanyaporia/MUStARD)).
