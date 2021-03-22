@@ -14,19 +14,8 @@ We manually annotate this multi-modal **MUStARD** sarcasm dataset with *sentimen
 * The main motivation of Inter-segment Inter-modal Attention is to learn the relationship between the different segments of the sentence across the modalities. 
 * In contrast, Intra-segment Inter-modal Attention focuses within the same segment of the sentence across the modalities.
 
-To illustrate and document this format, we use a corresponding BibTeX entry taken and modified from a [real example](https://doi.org/10.5281/zenodo.15991)). Note that all data/software BibTeX entries should be of the `@misc` type: 
-
-    @misc{lia_corrales_2015_15991,
-        author       = {Lia Corrales},
-        title        = {{dust: Calculate the intensity of dust scattering halos in the X-ray}},
-        month        = mar,
-        year         = 2015,
-        doi          = {10.5281/zenodo.15991},
-        version      = {1.0},
-        publisher    = {Zenodo},
-        url          = {https://doi.org/10.5281/zenodo.15991}
-        }
-
+### Citation
+Please cite the following paper if you find this dataset useful in your research:
 
     @inproceedings{mustard,
         title = "Towards Multimodal Sarcasm Detection (An  \_Obviously\_ Perfect Paper)",
@@ -42,3 +31,19 @@ To illustrate and document this format, we use a corresponding BibTeX entry take
         address = "Florence, Italy",
         publisher = "Association for Computational Linguistics",
     }
+    
+    
+    @inproceedings{chauhan-etal-2020-sentiment,
+        title = "Sentiment and Emotion help Sarcasm? A Multi-task Learning Framework for Multi-Modal Sarcasm, Sentiment and Emotion Analysis",
+        author = "Chauhan, Dushyant Singh  and
+          S R, Dhanush  and
+          Ekbal, Asif  and
+          Bhattacharyya, Pushpak",
+        booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+        month = jul,
+        year = "2020",
+        address = "Online",
+        publisher = "Association for Computational Linguistics",
+        url = "https://www.aclweb.org/anthology/2020.acl-main.401",
+        pages = "4351--4360",
+    }      
