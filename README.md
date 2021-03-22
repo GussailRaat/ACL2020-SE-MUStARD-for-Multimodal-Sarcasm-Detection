@@ -9,10 +9,13 @@ The original **MUStARD** dataset released in [Towards Multimodal Sarcasm Detecti
 ### Extended MUStARD Dataset with Sentiment and Emotion Classes
 We manually annotate this multi-modal **MUStARD** sarcasm dataset with *sentiment* and *emotion* classes, both implicit and explicit. You can download extended MUStARD datasets from [here](https://drive.google.com/drive/folders/1dJZyCSm80UZFHwbBRRg89njTDOwPkWa8?usp=sharing). 
 
-### Model Description
-* For multi-tasking, we propose two attention mechanisms, viz. Inter-segment Inter-modal Attention and Intra-segment Inter-modal Attention. 
-* The main motivation of Inter-segment Inter-modal Attention is to learn the relationship between the different segments of the sentence across the modalities. 
-* In contrast, Intra-segment Inter-modal Attention focuses within the same segment of the sentence across the modalities.
+### Data Format
+
+| Key  | Value |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+
 
 ### Run the code
     python2 trimodal.py
