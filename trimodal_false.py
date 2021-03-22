@@ -86,7 +86,7 @@ def featuresExtraction_fastext(foldNum, exMode):
     global train_length_cText, test_length_cText
     global train_mask_cText, test_mask_cText
 
-    path = '/home1/dushyant/PhD_thesis/myExperiments/MOSEI/CMU-MultimodalDataSDK-master/myPaper/ACL-2020/ACL-sarcasm/dataPrepration/MUStARD-master/dataset'+str(exMode)+'_fasttext/sarcasmDataset_speaker_dependent_'+str(exMode)+'_'+str(foldNum)+'.npz'
+    path = 'feature_extraction/dataset'+str(exMode)+'_fasttext/sarcasmDataset_speaker_dependent_'+str(exMode)+'_'+str(foldNum)+'.npz'
     data = np.load(path, mmap_mode='r')
     # =================================================================
     train_sentiment_cText_implicit = data['train_sentiment_cText_implicit']
@@ -148,7 +148,7 @@ def featuresExtraction_original(foldNum, exMode):
     global train_cText, train_uText, train_cVisual, train_uVisual, train_uAudio
     global test_cText, test_uText, test_cVisual, test_uVisual, test_uAudio
 
-    sarcasm = np.load('/home1/dushyant/PhD_thesis/myExperiments/MOSEI/CMU-MultimodalDataSDK-master/myPaper/ACL-2020/ACL-sarcasm/dataPrepration/MUStARD-master/dataset'+str(exMode)+'_original/sarcasmDataset_speaker_dependent_'+ exMode +'.npz', mmap_mode='r', allow_pickle=True)
+    sarcasm = np.load('feature_extraction/dataset'+str(exMode)+'_original/sarcasmDataset_speaker_dependent_'+ exMode +'.npz', mmap_mode='r', allow_pickle=True)
     train_cText       = sarcasm['feautesCT_train'][foldNum]
     train_cText       = np.array(train_cText)
     train_cText       = train_cText/np.max(abs(train_cText))
