@@ -51,9 +51,9 @@ There are two setups which are as follows;
      
 **Note**: see function *featuresExtraction_original(foldNum, exMode)* in *trimodal_false.py*, where foldNum = 3 and exMode  = False
      
-
+-----------------
 Download all the features and put into the folder **feature_extraction** and then run the code.
-
+-----------------
 
 
 ### Run the code
