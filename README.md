@@ -15,17 +15,26 @@ We manually annotate this multi-modal **MUStARD** sarcasm dataset with *sentimen
 * In contrast, Intra-segment Inter-modal Attention focuses within the same segment of the sentence across the modalities.
 
 
----
-title: "Distill for R Markdown"
-description: | 
-  Scientific and technical writing, native to the web
-output: distill::distill_article
-date: May 4, 2018
-author:
-  - name: Nora Jones 
-    url: https://example.com/norajones
-    affiliation: Spacely Sprockets
-    affiliation_url: https://example.com/spacelysprokets
-bibliography: biblio.yaml
----
-
+<!--  https://scholar.google.com/intl/en/scholar/inclusion.html#indexing -->
+<meta name="citation_title" content="Distill for R Markdown"/>
+<meta name="citation_fulltext_html_url" content="https://rstudio.github.io/distill"/>
+<meta name="citation_fulltext_world_readable" content=""/>
+<meta name="citation_online_date" content="2018/05/04"/>
+<meta name="citation_publication_date" content="2018/05/04"/>
+<meta name="citation_author" content="JJ Allaire"/>
+<meta name="citation_author_institution" content="RStudio"/>
+<meta name="citation_author" content="Rich Iannone"/>
+<meta name="citation_author_institution" content="RStudio"/>
+<meta name="citation_author" content="Yihui Xie"/>
+<meta name="citation_author_institution" content="RStudio"/>
+<meta name="citation_reference" content="citation_title=Distill;
+citation_publication_date=2016;citation_publisher=Distill Working
+Group;citation_doi=10.23915/distill;citation_author=Shan Carter;
+citation_author=Chirs Olah;citation_author=Arvind Satyanarayan"/>
+<meta name="citation_reference" content="citation_title=Literate
+programming;citation_publication_date=1984;
+citation_publisher=British Computer Society;citation_volume=27;
+citation_author=Donald E. Knuth"/>
+<meta name="citation_reference" content="citation_title=Dynamic
+documents with r and knitr;citation_publication_date=2015;
+citation_publisher=Chapman; Hall/CRC;citation_author=Yihui Xie"/>
