@@ -27,3 +27,18 @@ To illustrate and document this format, we use a corresponding BibTeX entry take
         url          = {https://doi.org/10.5281/zenodo.15991}
         }
 
+
+        @inproceedings{mustard,
+            title = "Towards Multimodal Sarcasm Detection (An  \_Obviously\_ Perfect Paper)",
+            author = "Castro, Santiago  and
+              Hazarika, Devamanyu  and
+              P{\'e}rez-Rosas, Ver{\'o}nica  and
+              Zimmermann, Roger  and
+              Mihalcea, Rada  and
+              Poria, Soujanya",
+            booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+            month = "7",
+            year = "2019",
+            address = "Florence, Italy",
+            publisher = "Association for Computational Linguistics",
+        }
