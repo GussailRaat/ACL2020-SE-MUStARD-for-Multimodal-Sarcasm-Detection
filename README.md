@@ -77,3 +77,13 @@ Please cite the following paper if you find this dataset useful in your research
         url = "https://www.aclweb.org/anthology/2020.acl-main.401",
         pages = "4351--4360",
     }      
+
+-------------------------------------------------------
+
+### --versions--
+
+python: 2.7
+
+keras: 2.2.2
+
+tensorflow: 1.9.0
