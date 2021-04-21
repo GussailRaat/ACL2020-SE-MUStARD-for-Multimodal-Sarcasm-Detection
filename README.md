@@ -57,14 +57,9 @@ There are two setups which are as follows;
 
 There are two setups which are as follows;
 
-#### (1) Speaker Dependent Setup (exMode=True)
+#### (1) Speaker Dependent Setup (exMode=True): Five folds [weights](https://drive.google.com/drive/folders/1CivfuB2QX6DrhN1FGQcgkpm69w9FXvMW?usp=sharing)
 
-* Five folds [weights](https://drive.google.com/drive/folders/1CivfuB2QX6DrhN1FGQcgkpm69w9FXvMW?usp=sharing)
-
---------------------
-#### (2) Speaker Independent Setup (exMode=False)
-
-* [Weights](https://drive.google.com/drive/folders/1kHX4TFfixERlevmQxMOuBnayZjocmYS7?usp=sharing)
+#### (2) Speaker Independent Setup (exMode=False): [Weights](https://drive.google.com/drive/folders/1kHX4TFfixERlevmQxMOuBnayZjocmYS7?usp=sharing)
 
 
 ### Run the code
