@@ -307,7 +307,7 @@ def multiTask_multimodal(mode, filePath, drops=[0.7, 0.5, 0.5], r_units=300, td_
         ###################### model training #######################
         np.random.seed(1)
 
-        path = 'weights/sarcasm_speaker_dependent_wse_new_text_setup_3_'+exMode+'_without_context_and_speaker_'+str(filePath)+', run: '+str(run)+'.hdf5'
+        path = 'weights/sarcasm_speaker_dependent_wse_'+exMode+'_without_context_and_speaker_'+str(filePath)+', run: '+str(run)+'.hdf5'
 
         earlyStop_sarcasm = EarlyStopping(monitor='val_output_sarcasm_loss', patience=30)
         bestModel_sarcasm = ModelCheckpoint(path, monitor='val_output_sarcasm_acc', verbose=1, save_best_only=True, mode='max')
@@ -333,7 +333,7 @@ def multiTask_multimodal(mode, filePath, drops=[0.7, 0.5, 0.5], r_units=300, td_
         tempR.append(performance[1][1])
         tempF.append(performance[1][2])
 
-        open('results/sarcasm_speaker_dependent_wse_new_text_setup_3_'+exMode+'_without_context_and_speaker.txt', 'a').write(path +'\n'+
+        open('results/sarcasm_speaker_dependent_wse_'+exMode+'_without_context_and_speaker.txt', 'a').write(path +'\n'+
                                                                                                         '=============== sarcasm ===============\n' +
                                                                                                         'loadAcc: '+ str(performance[0]) + '\n' +
                                                                                                         'prfs_weighted: '+ str(performance[1]) + '\n'*2)
@@ -395,9 +395,9 @@ for drop in [0.3]:
                         globalP_ee.append(tempP_ee)
                         globalR_ee.append(tempR_ee)
                         globalF_ee.append(tempF_ee)
-                        open('results/sarcasm_speaker_dependent_wse_new_text_setup_3_'+exMode+'_without_context_and_speaker.txt', 'a').write('-'*150 + '\n'*2)
-                    open('results/sarcasm_speaker_dependent_wse_new_text_setup_3_'+exMode+'_without_context_and_speaker.txt', 'a').write('#'*150 + '\n'*2)
-                    open('results/sarcasm_speaker_dependent_wse_new_text_setup_3_'+exMode+'_without_context_and_speaker_average.txt', 'a').write(filePath +'\n'+
+                        open('results/sarcasm_speaker_dependent_wse_'+exMode+'_without_context_and_speaker.txt', 'a').write('-'*150 + '\n'*2)
+                    open('results/sarcasm_speaker_dependent_wse_'+exMode+'_without_context_and_speaker.txt', 'a').write('#'*150 + '\n'*2)
+                    open('results/sarcasm_speaker_dependent_wse_'+exMode+'_without_context_and_speaker_average.txt', 'a').write(filePath +'\n'+
                                                                                                                     'globalAcc: '+ str(np.mean(globalAcc,axis=0)) + '\n' +
                                                                                                                     'globalP: '+ str(np.mean(globalP,axis=0)) + '\n' +
                                                                                                                     'globalR: '+ str(np.mean(globalR,axis=0)) + '\n' +
