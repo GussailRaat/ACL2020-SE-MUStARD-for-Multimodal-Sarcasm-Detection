@@ -305,7 +305,7 @@ def multiTask_multimodal(mode, filePath, drops=[0.7, 0.5, 0.5], r_units=300, td_
         print(model.summary())
 
         ###################### model training #######################
-        np.random.seed(run)
+        np.random.seed(1)
 
         path = 'weights/sarcasm_speaker_dependent_wse_new_text_setup_3_'+exMode+'_without_context_and_speaker_'+str(filePath)+', run: '+str(run)+'.hdf5'
 
