@@ -350,8 +350,8 @@ global globalAcc, globalP, globalR, globalF, globalAcc_is, globalP_is, globalR_i
 exMode = 'True'  # execution mode
 for drop in [0.3]:
     for rdrop in [0.3]:
-        for r_units in [200]:
-            for td_units in [200]:
+        for r_units in [300]:
+            for td_units in [50]:
                 for numSplit in [50]:
                     if exMode == 'True':
                         foldNums = [0,1,2,3,4]
