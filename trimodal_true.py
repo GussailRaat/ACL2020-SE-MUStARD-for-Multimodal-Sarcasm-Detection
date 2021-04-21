@@ -307,7 +307,7 @@ def multiTask_multimodal(mode, filePath, drops=[0.7, 0.5, 0.5], r_units=300, td_
         ###################### model training #######################
         np.random.seed(1)
 
-        path = 'weights/sarcasm_speaker_dependent_wse_'+exMode+'_without_context_and_speaker_'+str(filePath)+', run: '+str(run)+'.hdf5'
+        path = 'weights/sarcasm_speaker_dependent_wse_'+exMode+'_without_context_and_speaker_'+str(filePath)+'.hdf5'
 
         earlyStop_sarcasm = EarlyStopping(monitor='val_output_sarcasm_loss', patience=30)
         bestModel_sarcasm = ModelCheckpoint(path, monitor='val_output_sarcasm_acc', verbose=1, save_best_only=True, mode='max')
@@ -322,8 +322,7 @@ def multiTask_multimodal(mode, filePath, drops=[0.7, 0.5, 0.5], r_units=300, td_
 #                             verbose=1)
 
         model.load_weights(path)
-        prediction = model.predict([test_uText, test_uAudio, test_uVisual])
-        # np.ndarray.dump(prediction[3], open('results/sarcasm_'+str(filePath)+'_'+str(run)+'.np', 'wb'))
+        prediction = model.predict([test_uText, test_uAudio, test_uVisual])      
 
         # ============================== sarcasm =========================================
         performance = sarcasm_classification_performance(prediction[0], test_sarcasm_label)
