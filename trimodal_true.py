@@ -312,14 +312,14 @@ def multiTask_multimodal(mode, filePath, drops=[0.7, 0.5, 0.5], r_units=300, td_
         earlyStop_sarcasm = EarlyStopping(monitor='val_output_sarcasm_loss', patience=30)
         bestModel_sarcasm = ModelCheckpoint(path, monitor='val_output_sarcasm_acc', verbose=1, save_best_only=True, mode='max')
 
-        history = model.fit([train_uText, train_uAudio, train_uVisual], [train_sarcasm_label,train_sentiment_uText_implicit, train_sentiment_uText_explicit,train_emotion_uText_implicit, train_emotion_uText_explicit],
-                            epochs=200,
-                            batch_size=32,
-                            # sample_weight=train_mask_CT,
-                            shuffle=True,
-                            callbacks=[earlyStop_sarcasm, bestModel_sarcasm],
-                            validation_data=([test_uText, test_uAudio, test_uVisual], [test_sarcasm_label,test_sentiment_uText_implicit, test_sentiment_uText_explicit,test_emotion_uText_implicit, test_emotion_uText_explicit]),
-                            verbose=1)
+#         history = model.fit([train_uText, train_uAudio, train_uVisual], [train_sarcasm_label,train_sentiment_uText_implicit, train_sentiment_uText_explicit,train_emotion_uText_implicit, train_emotion_uText_explicit],
+#                             epochs=200,
+#                             batch_size=32,
+#                             # sample_weight=train_mask_CT,
+#                             shuffle=True,
+#                             callbacks=[earlyStop_sarcasm, bestModel_sarcasm],
+#                             validation_data=([test_uText, test_uAudio, test_uVisual], [test_sarcasm_label,test_sentiment_uText_implicit, test_sentiment_uText_explicit,test_emotion_uText_implicit, test_emotion_uText_explicit]),
+#                             verbose=1)
 
         model.load_weights(path)
         prediction = model.predict([test_uText, test_uAudio, test_uVisual])
