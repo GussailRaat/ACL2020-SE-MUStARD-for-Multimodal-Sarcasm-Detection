@@ -309,18 +309,15 @@ def multiTask_multimodal(mode, filePath, drops=[0.7, 0.5, 0.5], r_units=300, td_
         earlyStop_sarcasm = EarlyStopping(monitor='val_output_sarcasm_loss', patience=30)
         bestModel_sarcasm = ModelCheckpoint(path, monitor='val_output_sarcasm_acc', verbose=1, save_best_only=True, mode='max')
 
-
-
-        history = model.fit([train_uText, train_uAudio, train_uVisual], [train_sarcasm_label,train_sentiment_uText_implicit, train_sentiment_uText_explicit,train_emotion_uText_implicit, train_emotion_uText_explicit],
-                            epochs=200,
-                            batch_size=32,
-                            # sample_weight=train_mask_CT,
-                            shuffle=True,
-                            callbacks=[earlyStop_sarcasm, bestModel_sarcasm],
-                            validation_data=([test_uText, test_uAudio, test_uVisual], [test_sarcasm_label,test_sentiment_uText_implicit, test_sentiment_uText_explicit,test_emotion_uText_implicit, test_emotion_uText_explicit]),
-                            verbose=1)
-
-        historyAcc = max(history.history['val_output_sarcasm_acc'])
+#         model.fit([train_uText, train_uAudio, train_uVisual], [train_sarcasm_label,train_sentiment_uText_implicit, train_sentiment_uText_explicit,train_emotion_uText_implicit, train_emotion_uText_explicit],
+#                   epochs=200,
+#                   batch_size=32,
+#                   # sample_weight=train_mask_CT,
+#                   shuffle=True,
+#                   callbacks=[earlyStop_sarcasm, bestModel_sarcasm],
+#                   validation_data=([test_uText, test_uAudio, test_uVisual], [test_sarcasm_label,test_sentiment_uText_implicit, test_sentiment_uText_explicit,test_emotion_uText_implicit, test_emotion_uText_explicit]),
+#                   verbose=1)
+      
         model.load_weights(path)
         prediction = model.predict([test_uText, test_uAudio, test_uVisual])
         # np.ndarray.dump(prediction[3], open('results/sarcasm_'+str(filePath)+'_'+str(run)+'.np', 'wb'))
@@ -332,16 +329,14 @@ def multiTask_multimodal(mode, filePath, drops=[0.7, 0.5, 0.5], r_units=300, td_
         tempR.append(performance[1][1])
         tempF.append(performance[1][2])
 
-        open('results/sarcasm_speaker_dependent_wse_new_text_setup_3_'+exMode+'_without_context_and_speaker.txt', 'a').write(path +'\n'+
-                                                                                                        'historyAcc: '+ str(historyAcc) + '\n' +
+        open('results/sarcasm_speaker_dependent_wse_new_text_setup_3_'+exMode+'_without_context_and_speaker.txt', 'a').write(path +'\n'+                                                                                                        
                                                                                                         'loadAcc: '+ str(performance[0]) + '\n' +
                                                                                                         'prfs_weighted: '+ str(performance[1]) + '\n'*2)
 
 
         ################### release gpu memory ###################
         K.clear_session()
-        del model
-        del history
+        del model      
         gc.collect()
 
 
@@ -374,11 +369,4 @@ for drop in [0.3]:
                         globalP.append(tempP)
                         globalR.append(tempR)
                         globalF.append(tempF)
-                        open('results/sarcasm_speaker_dependent_wse_new_text_setup_3_'+exMode+'_without_context_and_speaker.txt', 'a').write('-'*150 + '\n'*2)
-                    open('results/sarcasm_speaker_dependent_wse_new_text_setup_3_'+exMode+'_without_context_and_speaker.txt', 'a').write('#'*150 + '\n'*2)
-                    open('results/sarcasm_speaker_dependent_wse_new_text_setup_3_'+exMode+'_without_context_and_speaker_average.txt', 'a').write(filePath +'\n'+
-                                                                                                                    'globalAcc: '+ str(np.mean(globalAcc,axis=0)) + '\n' +
-                                                                                                                    'globalP: '+ str(np.mean(globalP,axis=0)) + '\n' +
-                                                                                                                    'globalR: '+ str(np.mean(globalR,axis=0)) + '\n' +
-                                                                                                                    'globalF: '+ str(np.mean(globalF,axis=0)) + '\n' + '#'*100 + '\n'*2)
 
