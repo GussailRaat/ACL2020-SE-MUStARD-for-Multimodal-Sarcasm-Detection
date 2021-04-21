@@ -375,25 +375,6 @@ for drop in [0.3]:
                         globalR.append(tempR)
                         globalF.append(tempF)
 
-                        globalAcc_is.append(tempAcc_is)
-                        globalP_is.append(tempP_is)
-                        globalR_is.append(tempR_is)
-                        globalF_is.append(tempF_is)
-
-                        globalAcc_es.append(tempAcc_es)
-                        globalP_es.append(tempP_es)
-                        globalR_es.append(tempR_es)
-                        globalF_es.append(tempF_es)
-
-                        globalAcc_ie.append(tempAcc_ie)
-                        globalP_ie.append(tempP_ie)
-                        globalR_ie.append(tempR_ie)
-                        globalF_ie.append(tempF_ie)
-
-                        globalAcc_ee.append(tempAcc_ee)
-                        globalP_ee.append(tempP_ee)
-                        globalR_ee.append(tempR_ee)
-                        globalF_ee.append(tempF_ee)
                         open('results/sarcasm_speaker_dependent_wse_'+exMode+'_without_context_and_speaker.txt', 'a').write('-'*150 + '\n'*2)
                     open('results/sarcasm_speaker_dependent_wse_'+exMode+'_without_context_and_speaker.txt', 'a').write('#'*150 + '\n'*2)
                     open('results/sarcasm_speaker_dependent_wse_'+exMode+'_without_context_and_speaker_average.txt', 'a').write(filePath +'\n'+
