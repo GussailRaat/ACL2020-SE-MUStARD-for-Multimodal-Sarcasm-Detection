@@ -53,6 +53,20 @@ There are two setups which are as follows;
      
      Download all the features and put into the folder **feature_extraction** and then run the code.
 
+### Download Trained Weights
+
+There are two setups which are as follows;
+
+#### (1) Speaker Dependent Setup (exMode=True)
+
+* Five folds [weights](https://drive.google.com/drive/folders/1CivfuB2QX6DrhN1FGQcgkpm69w9FXvMW?usp=sharing)
+
+--------------------
+#### (2) Speaker Independent Setup (exMode=False)
+
+* [Weights](https://drive.google.com/drive/folders/1kHX4TFfixERlevmQxMOuBnayZjocmYS7?usp=sharing)
+
+
 ### Run the code
     
     python2 trimodal_true.py (for speaker dependent)
