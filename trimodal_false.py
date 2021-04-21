@@ -302,9 +302,9 @@ def multiTask_multimodal(mode, filePath, drops=[0.7, 0.5, 0.5], r_units=300, td_
         print(model.summary())
 
         ###################### model training #######################
-        np.random.seed(0)
+        np.random.seed(run)
 
-        path = 'weights/sarcasm_speaker_dependent_wse_new_text_setup_3_'+exMode+'_without_context_and_speaker_'+str(filePath)+', run: '+str(run)+'.hdf5'
+        path = 'weights/sarcasm_speaker_dependent_wse_'+exMode+'_without_context_and_speaker_'+str(filePath)+'.hdf5'
 
         earlyStop_sarcasm = EarlyStopping(monitor='val_output_sarcasm_loss', patience=30)
         bestModel_sarcasm = ModelCheckpoint(path, monitor='val_output_sarcasm_acc', verbose=1, save_best_only=True, mode='max')
@@ -320,7 +320,7 @@ def multiTask_multimodal(mode, filePath, drops=[0.7, 0.5, 0.5], r_units=300, td_
       
         model.load_weights(path)
         prediction = model.predict([test_uText, test_uAudio, test_uVisual])
-        # np.ndarray.dump(prediction[3], open('results/sarcasm_'+str(filePath)+'_'+str(run)+'.np', 'wb'))
+        
         performance = sarcasm_classification_performance(prediction[0], test_sarcasm_label)
         print(performance)
 
@@ -329,9 +329,10 @@ def multiTask_multimodal(mode, filePath, drops=[0.7, 0.5, 0.5], r_units=300, td_
         tempR.append(performance[1][1])
         tempF.append(performance[1][2])
 
-        open('results/sarcasm_speaker_dependent_wse_new_text_setup_3_'+exMode+'_without_context_and_speaker.txt', 'a').write(path +'\n'+                                                                                                        
-                                                                                                        'loadAcc: '+ str(performance[0]) + '\n' +
-                                                                                                        'prfs_weighted: '+ str(performance[1]) + '\n'*2)
+        open('results/sarcasm_speaker_dependent_wse_'+exMode+'_without_context_and_speaker.txt', 'a').write(path +'\n'+   
+                                                                                                            '=============== sarcasm ===============\n' +
+                                                                                                            'loadAcc: '+ str(performance[0]) + '\n' +
+                                                                                                            'prfs_weighted: '+ str(performance[1]) + '\n'*2)
 
 
         ################### release gpu memory ###################
