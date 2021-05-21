@@ -93,8 +93,8 @@ Please cite the following paper if you find this dataset useful in your research
 
 ### --versions--
 
-python: 2.7
+python: 3..7.3
 
-keras: 2.2.2
+keras: 2.0.8
 
-tensorflow: 1.9.0
+tensorflow: 1.14.0
