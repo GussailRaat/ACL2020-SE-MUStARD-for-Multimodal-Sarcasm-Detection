@@ -260,7 +260,7 @@ def multiTask_multimodal(mode, filePath, drops=[0.7, 0.5, 0.5], r_units=300, td_
             print('intAttn: ', intAttn.shape)
 
         else:
-            print('chose numSplit from '+ str(list(map(int, divisorGenerator(int(td_uVisual.shape[1])))))+'')
+            print('choose numSplit from '+ str(list(map(int, divisorGenerator(int(td_uVisual.shape[1])))))+'')
             return
 
         # ===========================================================================================================================================
