@@ -1,4 +1,4 @@
-## MUStARD *Extended* Multimodal Sarcasm Detection Dataset
+## *SE*-MUStARD Dataset for Multimodal Sarcasm Detection
 
 This repository contains the dataset and code for our ACL 2020 paper: 
 [Sentiment and Emotion help Sarcasm? A Multi-task Learning Framework for Multi-Modal Sarcasm, Sentiment and Emotion Analysis](https://www.aclweb.org/anthology/2020.acl-main.401/)
