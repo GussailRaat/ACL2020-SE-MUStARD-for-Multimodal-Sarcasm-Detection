@@ -6,8 +6,8 @@ This repository contains the dataset and code for our ACL 2020 paper:
 ### MUStARD Dataset
 The original **MUStARD** dataset released in [Towards Multimodal Sarcasm Detection (An Obviously Perfect Paper)](https://www.aclweb.org/anthology/P19-1455/). The MUStARD dataset is a [multimodal video corpus](https://github.com/soujanyaporia/MUStARD) for research in automated sarcasm discovery. The dataset is compiled from popular TV shows including Friends, The Golden Girls, The Big Bang Theory, and Sarcasmaholics Anonymous. MUStARD consists of audiovisual utterances annotated with sarcasm labels. Each utterance is accompanied by its context, which provides additional information on the scenario where the utterance occurs.
 
-### Extended MUStARD Dataset with Sentiment and Emotion Classes
-We manually annotate this multi-modal **MUStARD** sarcasm dataset with *sentiment* and *emotion* classes, both implicit and explicit. You can download extended MUStARD datasets from [here](https://docs.google.com/spreadsheets/d/1-qFklf5ZQPirUuQLF6GiyxJYB9YmENLrKrs-P-_r3HI/edit?usp=sharing) (text only). For rest of the modalities i.e., visual and acoustic, please follow this [GitHub repository](https://github.com/soujanyaporia/MUStARD).
+### *SE*-MUStARD Dataset with Sentiment and Emotion Classes
+We manually annotate this multi-modal **MUStARD** sarcasm dataset with *sentiment* and *emotion* classes, both implicit and explicit. You can download *SE*-MUStARD datasets from [here](https://docs.google.com/spreadsheets/d/1-qFklf5ZQPirUuQLF6GiyxJYB9YmENLrKrs-P-_r3HI/edit?usp=sharing) (text only). For rest of the modalities i.e., visual and acoustic, please follow this [GitHub repository](https://github.com/soujanyaporia/MUStARD).
 
 ### Data Format
 
